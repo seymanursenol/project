@@ -1,0 +1,24 @@
+<navbar></navbar>
+<h1>Mutfaklar</h1>
+
+<div id="rest" class="cerceve mt-2 " >
+  <div class="kitchen ">
+    <div  class="row border-light-subtle mt-3 ms-3 me-3 ">
+      <a class="col"  routerLink="/restorant">
+        <div class="col mb-1"><img src="" alt=""></div>
+          <p style="text-align: center;" class="name">
+            Tüm Mutfak
+          </p>
+      </a>
+      <a (click)="selectKitchen(kitchen)" Value="kitchen" class="col" *ngFor="let kitchen of kitchens" routerLink="/restorant/category/{{kitchen.kitchenId}}">
+        <div class="col mb-1"><img [src]="kitchen.images" alt=""></div>
+          <p style="text-align: center;" class="name">
+            {{kitchen.kitchenAd}}
+          </p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+

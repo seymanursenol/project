@@ -1,0 +1,55 @@
+<navbar></navbar>
+<div class="cerceve">
+  <div  class="cerceve2">
+    <div class="form-floating">
+      <select [(ngModel)]="selectedKitchen"  class="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
+        <option selected disabled>Kategoriler</option>
+        <option *ngFor="let kitchen of kitchens" [ngValue]="kitchen">{{kitchen.kitchenAd}}</option>
+      </select>
+      <label for="floatingSelect">Kategori seçiniz</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input #restorantName type="text" class="form-control" id="İsYeriName" placeholder="İsYeriName">
+      <label for="floatingİsYeriName">İş Yeri Adı</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input #restorantAdres type="text" class="form-control" id="RestorantAdres" placeholder="RestorantAdres">
+      <label for="floatingİsYeriName">Restorantın Adresi</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+      <input #restSahibiFullName type="text" class="form-control" id="fullName" placeholder="fullName">
+      <label for="floatingfullName">Adınız Soyadınız</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+      <input #restSahibiEMail type="text" class="form-control" id="Email" placeholder="Email">
+      <label for="floatingEmail">E-Mail</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input #RestEmail type="text" class="form-control" id="Email" placeholder="Email">
+      <label for="floatingEmail">Restorant E-Mail Adresi</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input #restSahibiPhone type="text" class="form-control" id="Phone" placeholder="Phone">
+      <label for="floatingPassword">Telefon</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input #Sifre type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div  class="mb-3">
+      <label  for="formFile" class="form-label">Default file input example</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <button type="button" class="btn btn-success me-5" (click)="SelectedBasvuru(restorantName.value,  restSahibiFullName.value,restorantAdres.value, restSahibiEMail.value, RestEmail.value, restSahibiPhone.value, Sifre.value,selectedKitchen)">Başvuruyu Gönder</button>
+    <button class="btn btn-success" type="submit" routerLink="/AdminLoginPage">Personel Giriş</button>
+  </div>
+</div>
+

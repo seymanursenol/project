@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YM/P1+WSB0lVpOT2shFeBM4d9Q+jTm2fzzGxAz/JoTY=",
+  "Source": "ServerWApp",
+  "BasePath": "_content/ServerWApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,26 @@
+.icerikp{
+  margin-left: 20%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.img{
+  width: 70%;
+  height: 300px;
+  overflow:  hidden;
+}
+.img img{
+  margin-top: -220px;
+}
+.urunbilgi img{
+  width: 120px;
+}
+.border{
+  border-radius: 10px;
+  width: 70%;
+}
+.border b{
+  font-size: 25px;
+}
+span{
+  padding: 12px;
+  font-size: 20px;
+}

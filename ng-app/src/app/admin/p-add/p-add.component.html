@@ -1,0 +1,20 @@
+<admin-page></admin-page>
+<div class="cerceve">
+  <h3 style="text-decoration:underline;">Ürün Ekle</h3>
+  <div class="div cerceve2 mt-5">
+    <div class="input-group mb-3">
+      <input #ProductName type="text" class="form-control" placeholder="Ürün İsmi" aria-label="product" aria-describedby="basic-addon1" required>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Ürün Açıklaması</span>
+      <textarea #Aciklama class="form-control" aria-label="With textarea"></textarea>
+    </div>
+
+    <div class="input-group mb-3">
+      <input #priceInput  type="text" class="form-control" aria-label="Amount (to the nearest dollar)" [(ngModel)]="price">
+      <span class="input-group-text">TL</span>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="Add(ProductName.value, Aciklama.value, price) ">Ekle</button>
+  </div>
+</div>

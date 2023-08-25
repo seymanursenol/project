@@ -1,0 +1,47 @@
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(79, 79, 79);
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.cerceve{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.cerceve2{
+  margin-left: 10px;
+}
+img{
+  width: 180px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.kaydir button{
+  background-color: rgb(255, 136, 0);
+  width: 5%;
+}
+.btn span{
+  font-size: 30px;
+}
+.row .name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cerceve2 .bilgi{
+  display: grid;
+  grid-template-columns: 130px 1fr;
+}

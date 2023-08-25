@@ -1,0 +1,48 @@
+<admin-page></admin-page>
+<div class="cerceve row">
+  <h3 style="text-decoration:underline;">Ürün Güncelleme</h3>
+    <div class="table col mt-3">
+      <div class="tablo siparis">
+        <ul class="list-group">
+          <div class="urun ">
+          <li *ngFor="let product of products" class="list-group-item mb-4" #ProductId value="{{product.productId}}">
+            <div class="row justify-content-end row">
+              <div class="col">
+                <div class="name">{{product.name}}</div>
+                <hr>
+                <div class="aciklama">{{product.aciklama}}</div>
+                <hr>
+                <div class="price">{{product.price}} TL</div>
+              </div>
+              <div class="col col-auto">
+                <button (click)="onSelectProduct(product)" class="btn btn-danger custom-btn btn-sm" id="btn1">Edit</button>
+              </div>
+            </div>
+          </li>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div  class="cerceve2 col mt-3">
+      <div  class="div cerceve2 ">
+        <div class="input-group mb-3">
+          <input type="hidden" name="id" [value]="selectedProduct.productId" >
+          <input type="hidden" name="id" [value]="selectedProduct.restorantId" >
+          <input  [value]="selectedProduct.name" [(ngModel)]="selectedProduct.name" type="text" class="form-control" placeholder="Ürün İsmi" aria-label="product" aria-describedby="basic-addon1" required>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Ürün Açıklaması</span>
+          <textarea  [value]="selectedProduct.aciklama" [(ngModel)]="selectedProduct.aciklama" #Aciklama class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+          <input  [value]="selectedProduct.price" [(ngModel)]="selectedProduct.price" #priceInput  type="text" class="form-control" aria-label="Amount (to the nearest dollar)" >
+          <span class="input-group-text">TL</span>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="Update(selectedProduct.productId, selectedProduct.name, selectedProduct.aciklama, selectedProduct.price, selectedProduct.restorantId)" >Güncelle</button>
+      </div>
+    </div>
+
+</div>

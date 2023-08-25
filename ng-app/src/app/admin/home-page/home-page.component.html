@@ -1,0 +1,19 @@
+<admin-page></admin-page>
+<div>
+  <div class="cerceve mt-5">
+    <div *ngFor="let product of products" class="border mt-4 mb-4 border-light-subtle">
+      <div class="urunbilgi row p-2">
+          <!-- <div class="col-3 ms-2">
+            <img src=" " alt="">
+          </div> -->
+          <div class="col me-auto mt-2">
+            <b>{{product.name}}</b> <br><br>
+            <p>{{product.aciklama}}</p>
+          </div>
+          <div class="col col-lg-2">
+            {{product.price}} TL
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>

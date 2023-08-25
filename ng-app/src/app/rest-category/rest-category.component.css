@@ -1,0 +1,47 @@
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(79, 79, 79);
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.cerceve{
+  display: flex;
+  position: relative;
+}
+img{
+  width: 180px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.cerceve2{
+  margin-left: 5px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.kaydir button{
+  background-color: rgb(255, 136, 0);
+  width: 5%;
+}
+.btn span{
+  font-size: 30px;
+}
+.kitchen img{
+  width: 100px;
+  margin-left: 5px;
+}
+.kitchen .name{
+  font-size: 13px;
+}
+.kitchen{
+  background-color: #F8F9F9;
+}

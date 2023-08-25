@@ -1,0 +1,38 @@
+<rest-category></rest-category>
+<h1>Restoranlar</h1>
+  <div id="rest" class="cerceve mt-2 " >
+    <div *ngFor="let restorant of restorants" class="cerceve2 row">
+      <div class="col border-light-subtle mt-3 ">
+        <a routerLink="/product/restId/{{restorant.restorantId}}">
+          <div class="col mb-3"><img [src]="" alt=""></div>
+          <div class="bilgi row">
+            <p class="name col">
+              {{restorant.restorantName}}
+            </p>
+            <div class="col">
+              <span style="font-size: 15px;"></span>
+              <span class="ms-1 material-icons">
+                schedule
+              </span>
+            </div>
+          </div>
+            <p style="font-size: 15px; color: rgb(31, 184, 0); font-family:Arial, Helvetica, sans-serif"><b>Ücretsiz Gönderim</b></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="kaydir" class="kaydir d-grid gap-1 d-md-flex justify-content-md-end me-5">
+    <button  id="kaydir" class="btn"><span class="material-icons">east</span></button>
+  </div>
+
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("kaydir").addEventListener("click", function() {
+            var rest = document.getElementById("rest");
+            rest.style.transition = "left 5s";
+            rest.style.left = "100px";
+        });
+    });
+</script> -->

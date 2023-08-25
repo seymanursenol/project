@@ -1,0 +1,29 @@
+<navbar></navbar>
+<form (ngSubmit)="register()">
+  <div class="border border-warning mt-3 mb-5">
+    <div class="cerceve2 ">
+      <label class="mb-4" for="">Kayıt Ol</label>
+      <div class="input">
+        <div class="input-group mb-3">
+          <input [(ngModel)]="model.Name" name="Name" type="text" class="form-control" placeholder="İsim Soyisim" aria-label="İsim"
+          required ngModel>
+        </div>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="model.userName" name="userName" type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="userName"
+          required ngModel>
+        </div>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="model.Email" name="Email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"
+          required ngModel>
+        </div>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="model.Parola" name="Parola" type="text" class="form-control" placeholder="Parola" aria-label="Sifre" aria-describedby="basic-addon1"
+          required minlength="8" ngModel>
+        </div>
+      </div>
+      <div class="button">
+        <button class="btn btn-outline-warning" ><b>Kayıt Ol</b> </button>
+      </div>
+    </div>
+  </div>
+</form>

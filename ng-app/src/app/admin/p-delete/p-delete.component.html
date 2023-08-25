@@ -1,0 +1,21 @@
+<admin-page></admin-page>
+<div class="cerceve">
+  <h3 style="text-decoration:underline;">Ürün Silme</h3>
+<div class="table">
+  <div class="tablo siparis">
+    <ul class="list-group">
+      <li *ngFor="let product of products" class="list-group-item" value="{{product.productId}}">
+        {{product.name}}
+        <div class="row justify-content-end">
+          <div class="col-auto">
+            <button (click)="productDelete(product)" class="btn btn-danger custom-btn btn-sm" id="btn1">Delete</button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+

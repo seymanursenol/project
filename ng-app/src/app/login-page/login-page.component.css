@@ -1,0 +1,35 @@
+
+.border{
+  width: 40%;
+  margin-left: 30%;
+  padding: 5%;
+  padding-left: 5%;
+  border-radius: 10px;
+}
+.input{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.button{
+  margin-left: 40%;
+}
+.button .btn{
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.cerceve2 label {
+  font-size: 25px;
+  margin-left: 40%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.kayitButton{
+  margin-left: 2%;
+  font-size: 12px;
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+  color: rgba(63, 63, 68, 0.422);
+}
+.kayitButton p,a{
+  margin: 0;
+}

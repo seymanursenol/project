@@ -1,0 +1,62 @@
+.img img{
+  width: 500px;
+}
+.aciklama h1{
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 15%;
+}
+.aciklama h2{
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.list{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.list li{
+  list-style-type: none;
+}
+mat-icon{
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.btn{
+  background-color: #ff88007a;
+  margin-left: 5%;
+  flex: 1;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* .selection .row{
+  width: 80%;
+}
+.selection img{
+  width: 130px;
+  border-radius: 10%;
+}
+.selection .col{
+  border: 1px solid rgba(115, 112, 112, 0.34);
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.689);
+  border-radius: 2%;
+  width: 10%;
+}
+.selection a{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(0, 0, 0);
+}
+.selection h1{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+.category{
+  margin-left: -20%;
+} */

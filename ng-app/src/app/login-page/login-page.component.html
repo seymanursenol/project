@@ -1,0 +1,33 @@
+<navbar></navbar>
+
+<form #form="ngForm" action="">
+  <section class="mb-5">
+    <div class="border border-warning mt-3">
+      <div>
+        <div class="cerceve2 ">
+          <label class="mb-4" for="">Giriş</label>
+          <div class="input">
+            <div class="input-group mb-3">
+              <input [(ngModel)]="model.email" type="email" name="email" class="form-control"  placeholder="Email" aria-label="email" required email ngModel>
+            </div>
+            <div class="input-group mb-3">
+              <input [(ngModel)]="model.password" type="password" name="password" class="form-control" placeholder="Şifre" aria-label="sifre" required minlength="8" ngModel >
+            </div>
+          </div>
+          <div class="parola">
+            <a class="sifre2 ms-4" style="text-decoration: none; color: rgb(132, 132, 255);" href="#">Şifreni mi unuttun?</a>
+          </div>
+
+          <form (ngSubmit)="Login()" action=""><div class="button">
+            <button [disabled]="form.invalid" class="btn btn-outline-warning" type="submit"><b>Giriş Yap</b> </button>
+          </div></form>
+
+        </div>
+      </div>
+        <div class="kayitButton ms-3 mt-2">
+          <a class="sifre2 " routerLink="/kayitOl" style="text-decoration: none; color: rgba(63, 63, 68, 0.422);">Kaydın yok mu?  KAYIT OL</a>
+        </div>
+    </div>
+  </section>
+</form>
+

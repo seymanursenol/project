@@ -1,0 +1,26 @@
+<navbar></navbar>
+<div class="icerik">
+  <div  class="icerikp ">
+    <div class="img">
+      <img src="assets/images2/burgerm.jpg" alt="">
+    </div>
+    <div *ngFor="let product of products" class="border mt-4 mb-4 border-light-subtle">
+      <div class="urunbilgi row p-2">
+        <!-- <div class="col-3 ms-2">
+          <img src=" " alt="">
+        </div> -->
+        <div class="col me-auto mt-2">
+           <b>{{product.name}}</b> <br><br>
+          <p>{{product.aciklama}}</p>
+        </div>
+        <div class="col col-lg-2 button">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button (click)="Ekleme()" type="submit" class="btn btn-outline-secondary"><b>+</b> </button>
+            <span>{{count}}</span>
+            <button (click)="Cikarma()" type="button" class="btn btn-outline-secondary"><b>-</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

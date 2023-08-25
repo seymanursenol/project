@@ -1,0 +1,23 @@
+.list-group{
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 90%;
+}
+.custom-btn.active {
+  background-color: green; /* Örnek olarak yeşil renk */
+  color: white; /* Örnek olarak beyaz renk */
+}
+.list{
+  display: flex;
+}
+.product, .mode{
+  flex: 1;
+}
+.product-mode{
+  margin-left: 60%;
+  border-radius: 3px;
+  text-align: center;
+}
+h4{
+  color: rgb(255, 0, 0);
+}

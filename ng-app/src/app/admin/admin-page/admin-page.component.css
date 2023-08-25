@@ -1,0 +1,25 @@
+.component{
+  font-size: 25px;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(148, 148, 148, 0.215);
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.restName{
+  margin-left: -40%;
+}
+.col{
+  width: 12%;
+}
+.alt-header2 .btn{
+  display: flex;
+  width: auto;
+  margin-left: 5%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+
+

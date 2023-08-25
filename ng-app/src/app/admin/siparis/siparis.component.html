@@ -1,0 +1,26 @@
+<admin-page></admin-page>
+
+<div class="table">
+  <div class="tablo siparis">
+    <ul class="list-group">
+      <li class="list-group-item active" aria-current="true">Siparişler</li>
+      <li *ngFor="let siparis of siparisler" class="list-group-item list">
+          <div class="product">
+            {{siparis.urunName}}
+            <br>
+            {{siparis.price}} TL
+          </div>
+          <div class="mode row justify-content-end">
+
+            <div class="col-auto">
+              <div class="product-mode"><h4>{{mode}}</h4></div>
+              <button (click)="H()" class="btn custom-btn btn-sm" id="btn1">Hazırlanıyor</button>
+              <button (click)="Y()" class="btn custom-btn btn-sm" id="btn2">Yolda</button>
+              <button (click)="T()" class="btn custom-btn btn-sm"  id="btn3">Teslim Edildi</button>
+              <button (click)="Iptal()" class="btn custom-btn btn-sm" id="btn4">İptal Edildi</button>
+            </div>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
